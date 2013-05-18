@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sistema de Pedidos</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_categories_list">Categorias</string>
+    <string name="title_activity_categories_add">Adicionar Categoria</string>
+    <string name="edit">Editar</string>
+    <string name="delete">Deletar</string>
+    <string name="title_activity_itens_list">Itens</string>
+    <string name="category">Categoria</string>
+    <string name="title_activity_itens_add">Adicionar Item</string>
+    <string name="title_activity_itens_edit">Editar Item</string>
+    <string name="title_activity_requests_list">Pedidos</string>
+    <string name="title_activity_requests_add">Novo Pedido</string>
+
+</resources>

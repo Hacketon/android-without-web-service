@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".CategoriesAddActivity" >
+
+    <TextView
+        android:id="@+id/tvNome"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:textSize="13sp"
+        android:layout_marginTop="20dp"
+        android:text="Nome" />
+
+    <EditText
+        android:id="@+id/etNome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="false"
+        android:layout_below="@+id/tvNome"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:textColor="#ffffff" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout
+	        android:id="@+id/bottomBar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="#1f1f1f"
+	        android:gravity="center_vertical|center_horizontal" >
+
+	            <Button
+	                android:id="@+id/back"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginTop="9dp"
+	                android:background="@drawable/save"
+	                android:minHeight="0dp"
+	                android:minWidth="0dp"
+	                android:onClick="callSaveAction" />
+	        
+	    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/rbActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etNome"
+        android:layout_below="@+id/etNome"
+        android:layout_marginTop="18dp"
+        android:text="Ativa"
+        android:textColor="#ffffff"
+        android:textSize="13sp" />
+
+    <Spinner
+        android:id="@+id/selectTables"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rbActive"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp" />
+    
+</RelativeLayout>

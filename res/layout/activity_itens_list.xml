@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItensListActivity" 
+    android:background="#000">
+    
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#0f1f07"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/down" 
+            android:contentDescription="@string/category"/>
+
+        <TextView
+            android:id="@+id/categoryName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/category"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        
+    </RelativeLayout>
+    
+	<ListView
+	    android:id="@+id/listItens"
+	    android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"  
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"/>
+    
+	<LinearLayout
+	        android:id="@+id/bottomBar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerHorizontal="true"
+	        android:layout_centerVertical="true"
+	        android:background="#1f1f1f"
+	        android:gravity="center_vertical|center_horizontal" >
+
+	            <Button
+	                android:id="@+id/back"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginTop="9dp"
+	                android:background="@drawable/back"
+	                android:minHeight="0dp"
+	                android:minWidth="0dp"
+	                android:onClick="callMain" />
+
+	            <Button
+	                android:id="@+id/addNew"
+	                android:layout_width="30dp"
+	                android:layout_height="30dp"
+	                android:layout_marginBottom="10dp"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginTop="9dp"
+	                android:background="@drawable/add"
+	                android:minHeight="0dp"
+	                android:minWidth="0dp"
+	                android:onClick="callAddItem" />
+	        
+	    </LinearLayout>
+</RelativeLayout>
