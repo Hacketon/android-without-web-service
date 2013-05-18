@@ -1,0 +1,122 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".ItensAddActivity" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="Nome"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/etNome"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="false"
+                android:layout_below="@+id/tvNome"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Nome"
+                android:inputType="text"
+                android:textColor="#fff" >
+
+                <requestFocus />
+            </EditText>
+
+            <EditText
+                android:id="@+id/etValue"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tvNome"
+                android:layout_alignRight="@+id/etNome"
+                android:layout_below="@+id/tvNome"
+                android:layout_marginTop="99dp"
+                android:ems="10"
+                android:hint="Valor"
+                android:inputType="numberDecimal"
+                android:textColor="#fff" >
+            </EditText>
+
+            <TextView
+                android:id="@+id/tvValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etNome"
+                android:layout_below="@+id/etNome"
+                android:layout_marginTop="17dp"
+                android:text="Valor"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/etValue"
+                android:layout_below="@+id/etValue"
+                android:layout_marginTop="17dp"
+                android:text="Imagem"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageItem"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_below="@+id/textView1"
+                android:layout_centerHorizontal="false"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="34dp"
+                android:background="#fff"
+                android:contentDescription="Imagem"
+                android:padding="5dp"
+                android:src="@drawable/add_image" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#1f1f1f"
+        android:gravity="center_vertical|center_horizontal" >
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/save"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:onClick="callSaveAction" />
+    </LinearLayout>
+
+</RelativeLayout>
